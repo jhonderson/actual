@@ -483,6 +483,7 @@ class TransactionEditInner extends PureComponent {
                 value={descriptionPretty}
                 onClick={() => this.onClick(transaction.id, 'payee')}
                 data-testid="payee-field"
+                tabIndex={0}
               />
             </View>
 
@@ -517,6 +518,7 @@ class TransactionEditInner extends PureComponent {
                   // }
                   onClick={() => this.onClick(transaction.id, 'category')}
                   data-testid="category-field"
+                  tabIndex={0}
                 />
               ) : (
                 <Text style={{ paddingLeft: EDITING_PADDING }}>
@@ -533,6 +535,7 @@ class TransactionEditInner extends PureComponent {
                 value={account ? account.name : null}
                 onClick={() => this.onClick(transaction.id, 'account')}
                 data-testid="account-field"
+                tabIndex={0}
               />
             </View>
 
